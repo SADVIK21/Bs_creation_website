@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B's Creation | Event Management</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        B's Creation
+        <img src="bs_creation_blue.png" alt="B's Creation Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero slideshow" id="home">
+    <div class="hero-slideshow">
+      <div class="slide active" style="background-image: url(wedding_image_front1.jpeg);"></div>
+      <div class="slide" style="background-image: url(weddingimage3.jpg);"></div>
+      <div class="slide" style="background-image: url('weddingimage4.jpg');"></div>
+      <div class="slide" style="background-image: url('weddingimage5.jpg');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="fade-in">LIFE IS AN EVENT, MAKE IT MEMORABLE</h1>
+      <p class="fade-in delay">B's Creation specializes in crafting bespoke events that capture your unique vision, style, and personality.</p>
+      <a href="#contact" class="btn scale-up">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="intro-section" id="about">
+    <div class="container">
+      <h2 class="script-title slide-up">Creating unforgettable Moments</h2>
+      <!-- <h3 class="section-title">WITH HEART</h3> -->
+      <div class="intro-content">
+        <p class="slide-up">At B's Creation, we understand that every event tells a story. Founded by Biplob Bhowmick, our passion lies in creating memorable experiences that reflect your unique personality and style.</p>
+        <p class="slide-up">From wedding celebrations to corporate events, birthday parties to traditional ceremonies, we handle every detail with precision and creativity to transform your vision into reality.</p>
+        <p class="slide-up">Our dedicated team brings years of experience and a commitment to excellence, ensuring your special moments are crafted with heart and executed flawlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center;">OUR SERVICES</h2>
+      <div class="services-grid custom-services-layout">
+        <!-- Row 1 -->
+        <div class="services-row">
+          <div class="service-card">
+            <img src="wedding part.jpg" alt="Wedding Events" class="service-image">
+            <h3 class="service-name">weddings</h3>
+          </div>
+          <div class="service-card">
+            <img src="corporate.jpg" alt="Corporate Events" class="service-image">
+            <h3 class="service-name">corporate events</h3>
+          </div>
+          <div class="service-card">
+            <img src="birthday.jpg" alt="Birthday Celebrations" class="service-image">
+            <h3 class="service-name">birthdays</h3>
+          </div>
+        </div>        
+      
+        <!-- Row 2 -->
+        <div class="services-row">
+          <div class="service-card">
+            <img src="rice ceremony.jpg" alt="baby's Rice Ceremony" class="service-image">
+            <h3 class="service-name">rice ceremonies</h3>
+          </div>
+          <div class="service-card">
+            <img src="photoshoots1.jpg" alt="photoshoots" class="service-image">
+            <h3 class="service-name">photoshoots</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages-section" id="packages">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center;">OUR PACKAGES</h2>
+      <div class="packages-grid">
+        <div class="package-card">
+          <h3 class="package-title">Package 1</h3>
+          <p class="package-price"></p>
+          <ul class="package-features">
+            <li>Professional event planning</li>
+            <li>Venue selection assistance</li>
+            <li>Basic decoration setup</li>
+            <li>Photography service</li>
+            <li>Catering coordination</li>
+          </ul>
+          <a href="#contact" class="btn" style="background-color: white; color: #5c5738;">Inquire</a>
+        </div>
+        <div class="package-card">
+          <h3 class="package-title">Package 2</h3>
+          <p class="package-price"></p>
+          <ul class="package-features">
+            <li>Full event planning & coordination</li>
+            <li>Premium decoration setup</li>
+            <li>Photography & videography</li>
+            <li>Catering service included</li>
+            <li>Entertainment arrangements</li>
+          </ul>
+          <a href="#contact" class="btn" style="background-color: white; color: #5c5738;">Inquire</a>
+        </div>
+        <div class="package-card">
+          <h3 class="package-title">Package 3</h3>
+          <p class="package-price"></p>
+          <ul class="package-features">
+            <li>Complete luxury event planning</li>
+            <li>Exclusive venue arrangements</li>
+            <li>Premium decoration & lighting</li>
+            <li>Professional photo & video team</li>
+            <li>Customized catering experience</li>
+            <li>Transportation arrangements</li>
+          </ul>
+          <a href="#contact" class="btn" style="background-color: white; color: #5c5738;">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center;">OUR GALLERY</h2>
+      <div class="gallery-grid scrollable-gallery"> <!-- Added class -->
+        <div class="gallery-item">
+          <img src="birthday_photos.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="birthday_photos_duliajan.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <video class="gallery_video" autoplay loop muted playsinline>
+            <source src="birthday_video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <video class="gallery_video" autoplay loop muted playsinline>
+            <source src="kolkata_event.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/320" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="/api/placeholder/400/320" alt="Event Gallery" class="gallery-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center;">CLIENT TESTIMONIALS</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p class="testimonial-text">"B's Creation transformed our wedding into an unforgettable fairy tale experience. Every detail was perfect, and the team's attention to our vision was remarkable."</p>
+          <p class="testimonial-author">- Priya & Rajesh</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="script-title">Get in Touch</h2>
+      <h3 class="section-title">CONTACT US</h3>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><strong>Address:</strong> Sripuria petrol pump, Tinsukia, Assam</p>
+          <p><strong>Phone/WhatsApp:</strong> 9387064245, 7002419697, 9957700596</p>
+          <p><strong>Email:</strong> shahinbhowmick10@gmail.com</p>
+          <div class="social-icons">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Facebook Logo Example</title>
+                <style>
+                    /* CSS to target Facebook logo and set its width to 40px */
+                    img[alt="Facebook Logo"] {
+                        width: 40px;
+                        height: auto; /* To maintain aspect ratio */
+                    }
+                </style>
+            </head>
+            <body>
+            
+                
+                <!-- Linking the Facebook Logo to Your Facebook Profile -->
+                <a href="https://www.facebook.com/yourusername" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+                </a>
+            
+            </body>
+            </html>
+            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Logo Example</title>
+</head>
+<body>
+
+    
+    <!-- Linking the Instagram Logo to Your Instagram Profile -->
+    <a href="https://www.instagram.com/bscreation_events" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram Logo" width="40">
+    </a>
+
+</body>
+</html>
+
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <h3>Send us a Message</h3>
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" class="form-input" required>
+            <input type="email" placeholder="Your Email" class="form-input" required>
+            <input type="tel" placeholder="Your Phone" class="form-input" required>
+            <select class="form-input">
+              <option value="" disabled selected>Event Type</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="birthday">Birthday</option>
+              <option value="ceremony">Rice Ceremony</option>
+              <option value="sports">Sports Event</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea placeholder="Your Message" class="form-textarea" rows="5" required></textarea>
+            <button type="submit" class="btn" style="background-color: white; color: #5c5738;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">B's Creation</div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="payment-methods">
+        <span>Payment Options:</span>
+        <span>UPI | Net Banking | Credit Card</span>
+      </div>
+      <p class="copyright">© 2025 B's Creation. All Rights Reserved. | Owner: Biplob Bhowmick</p>
+    </div>
+  </footer>
+
+  <script>
+    gsap.from(".fade-in", {opacity: 0, duration: 1, y: -50, stagger: 0.3});
+    gsap.from(".slide-up", {opacity: 0, y: 50, duration: 1, stagger: 0.3});
+    gsap.from(".scale-up", {scale: 0.8, opacity: 0, duration: 1, delay: 0.5});
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slideshow .slide');
+
+    function showNextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 4000); // Change every 5 seconds
+  </script>
+</body>
+</html>
