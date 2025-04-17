@@ -161,15 +161,31 @@
             <source src="Media/kolkata_event.mp4" type="video/mp4">
           </video>
         </div>
-        <video class="gallery_video" autoplay loop muted playsinline>
-          <source src="Media/Media/aroma.mp4" type="video/mp4">
-        </video>
+          <div class="gallery-item">
+            <img src="Media/IMG-20250416-WA0153.jpg" alt="Event Gallery" class="gallery-image">
         </div>
         <div class="gallery-item">
-          <img src="/api/placeholder/400/320" alt="Event Gallery" class="gallery-image">
+          <video class="gallery_video" autoplay loop muted playsinline>
+            <source src="Media/aroma.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="gallery-item">
-          <img src="/api/placeholder/400/320" alt="Event Gallery" class="gallery-image">
+          <img src="Media/IMG-20250416-WA0150.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="/Media/IMG-20250416-WA0151.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="Media/IMG-20250416-WA0152.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="Media/IMG-20250416-WA0154.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="Media/IMG-20250416-WA0156.jpg" alt="Event Gallery" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+          <img src="Media/IMG-20250416-WA0155.jpg5555" alt="Event Gallery" class="gallery-image">
         </div>
       </div>
     </div>
@@ -202,7 +218,7 @@
           <p><strong>Email:</strong> shahinbhowmick10@gmail.com</p>
           <div class="social-icons">
             <!-- Facebook -->
-            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook">
+            <a href="https://www.facebook.com/share/1AVbMAJdbQ/?mibextid=wwXIfr" target="_blank" title="Facebook">
               <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" width="40" height="40">
             </a>
           
@@ -213,12 +229,12 @@
           </div>
         </div>
         <div class="contact-form-container">
-          <h3>Send us a Message</h3>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" class="form-input" required>
-            <input type="email" placeholder="Your Email" class="form-input" required>
-            <input type="tel" placeholder="Your Phone" class="form-input" required>
-            <select class="form-input">
+          <h3>Send us a Message</h3> 
+          <form class="contact-form" action="https://formspree.io/f/xblgvrya" method="POST">
+            <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+            <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+            <input type="tel" name="phone" placeholder="Your Phone" class="form-input" required>
+            <select name="event" class="form-input" required>
               <option value="" disabled selected>Event Type</option>
               <option value="wedding">Wedding</option>
               <option value="corporate">Corporate Event</option>
@@ -227,12 +243,12 @@
               <option value="sports">Sports Event</option>
               <option value="other">Other</option>
             </select>
-            <textarea placeholder="Your Message" class="form-textarea" rows="5" required></textarea>
+            <textarea name="message" placeholder="Your Message" class="form-textarea" rows="5" required></textarea>
             <button type="submit" class="btn" style="background-color: white; color: #5c5738;">Send Message</button>
           </form>
         </div>
       </div>
-    </div>
+
   </section>
 
   <!-- Footer -->
