@@ -527,21 +527,56 @@
     .copyright {
       font-size: 14px;
     }
-    /* === Responsive Fixes Without Layout Changes === */
+    /* === MOBILE RESPONSIVENESS: Same Layout, Fully Visible === */
 
 html, body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* Slight font adjustments for very small screens */
-@media screen and (max-width: 480px) {
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive containers */
+.container,
+.nav-container,
+.services-row,
+.gallery-grid,
+.contact-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Ensure flexbox wraps nicely on mobile */
+.services-row,
+.nav-links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Gallery responsiveness */
+.gallery-item,
+.service-card,
+.package-card {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+/* Text size adjustments for readability on small screens */
+@media screen and (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .hero-content p {
@@ -550,7 +585,7 @@ html, body {
 
   .btn {
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .section-title {
@@ -562,22 +597,31 @@ html, body {
   }
 
   .package-title, .package-price {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .service-name {
-    font-size: 20px;
+    font-size: 22px;
   }
 
-  .gallery-item {
-    width: 100%;
-    height: auto;
+  .testimonial-text {
+    font-size: 16px;
   }
 
-  .service-image {
-    width: 100%;
-    height: auto;
+  .form-input, .form-textarea {
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .nav-links li {
+    margin-left: 15px;
   }
 }
 
-   
+/* Optional: allow vertical scrolling for large sections */
+.hero, .gallery-section, .packages-section {
+  overflow-y: auto;
+}
