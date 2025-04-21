@@ -590,25 +590,3 @@ body {
   margin-top: 40px;
 }
 
-/* --- Responsive Adjustments --- */
-@media (min-width: 600px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 599px) {
-  .container {
-    padding: 10px;
-  }
-
-  .nav a {
-    display: block;
-    margin: 5px 0;
-  }
-}
