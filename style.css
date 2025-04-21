@@ -527,67 +527,57 @@
     .copyright {
       font-size: 14px;
     }
-    @media (max-width: 768px) {
-      .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .nav-links {
-        flex-direction: column;
-        width: 100%;
-        padding-top: 10px;
-      }
-    
-      .nav-links li {
-        margin: 10px 0;
-      }
-    
-      .hero-content h1 {
-        font-size: 28px;
-      }
-    
-      .hero-content p {
-        font-size: 20px;
-      }
-    
-      .services-row,
-      .packages-grid,
-      .contact-grid,
-      .gallery-grid {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0 10px;
-      }
-    
-      .gallery-item,
-      .service-card,
-      .package-card {
-        width: 100% !important;
-        height: auto;
-      }
-    
-      .service-image,
-      .gallery-image,
-      .gallery_video {
-        width: 100%;
-        height: auto;
-      }
-    
-      .container {
-        padding: 0 10px;
-      }
-    
-      .footer-links {
-        flex-direction: column;
-      }
-    
-      .footer-links li {
-        margin: 10px 0;
-      }
-    
-      .contact-form {
-        grid-template-columns: 1fr;
-      }
-    }
-    
+    /* === Responsive Fixes Without Layout Changes === */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Slight font adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .script-title {
+    font-size: 32px;
+  }
+
+  .package-title, .package-price {
+    font-size: 20px;
+  }
+
+  .service-name {
+    font-size: 20px;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+   
